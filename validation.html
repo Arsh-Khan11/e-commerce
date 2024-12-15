@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Details Form</title>
+    <link rel="stylesheet" href="validation.css">
+</head>
+<body>
+    <h1>Enter Customer Details</h1>
+    <form id="customerForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+        <label for="address">Address:</label>
+        <textarea id="address" name="address" required placeholder="Enter your address"></textarea>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number" pattern="[0-9]{10}" title="Please enter a valid 10-digit phone number">
+
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+        <div class="error-message" id="error-message"></div>
+    </form>
+
+    <script src="validation.js"></script>
+</body>
+</html>

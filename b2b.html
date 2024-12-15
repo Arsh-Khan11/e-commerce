@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B2C Homepage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            color: white;
+            padding: 10px 20px;
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .search-cart {
+            display: flex;
+            align-items: center;
+        }
+
+        .search-cart input {
+            padding: 5px;
+        }
+
+        .hero {
+            background-color: #f4f4f4;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .featured-products, .promo-banner, .categories, .testimonials, .blog, .newsletter {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .product-grid, .category-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .product, .category {
+            border: 1px solid #ccc;
+            padding: 10px;
+            width: 150px;
+            text-align: center;
+        }
+
+        .testimonial {
+            margin: 10px 0;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">BrandLogo</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="search-cart">
+            <input type="text" placeholder="Search...">
+            <div class="cart">🛒 (0)</div>
+            <div class="account">Login</div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Welcome to Our Store!</h1>
+        <p>Your one-stop shop for amazing products.</p>
+        <button>Shop Now</button>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <div class="product">Product 1</div>
+            <div class="product">Product 2</div>
+            <div class="product">Product 3</div>
+            <div class="product">Product 4</div>
+        </div>
+    </section>
+
+    <section class="promo-banner">
+        <h2>20% Off Your First Order!</h2>
+    </section>
+
+    <section class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <div class="category">Clothing</div>
+            <div class="category">Electronics</div>
+            <div class="category">Home Goods</div>
+            <div class="category">Accessories</div>
+        </div>
+    </section>
+
+    <section class="testimonials">
+        <h2>What Our Customers Say</h2>
+        <div class="testimonial">"Great products!" - Customer A</div>
+        <div class="testimonial">"Excellent service!" - Customer B</div>
+    </section>
+
+    <section class="blog">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-post">Blog Post 1</div>
+        <div class="blog-post">Blog Post 2</div>
+    </section>
+
+    <section class="newsletter">
+        <h2>Subscribe to Our Newsletter</h2>
+        <input type="email" placeholder="Enter your email">
+        <button>Subscribe</button>
+    </section>
+
+   
